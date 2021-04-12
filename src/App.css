@@ -1,38 +1,132 @@
 .App {
-  text-align: center;
+  border:1px solid black;
+  /* text-align: center; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidebar {
+  text-align:center;
+  height: 100%;
+  padding:0px; 
+   width: 10%;  
+   position: fixed; 
+   z-index: 1; 
+   top: 0; 
+   left: 0;
+   border:1px solid cyan;
+   background-color:white; 
+   transition: .5s ease;
+    overflow-x: hidden; 
+    padding-top: 20px; 
+    display: flex; 
+    flex-direction:
+     column; 
+     align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  border: none;
+  display: inline-block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bottomButton {
+  position:fixed;
+  bottom:0;
+  margin:20px;
+  height:75px;
+  padding: 0px 50px;
+  color:gray;
+  background-color:cyan;
+  border-radius: 12%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bottomButton:disabled {
+  background-color:white;
+  color:white;
 }
 
-.App-link {
-  color: #61dafb;
+.classifyPanel {
+  padding:2%;
+  position: fixed;
+  left:10%;  
+  height: 100%; 
+  width: 35%;
+  background-color:#f7f7f7;
+  color:gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rightBox {
+  position:fixed;
+  text-align:left;
+  color:gray;
+  top:8%;
+  right:30%;
 }
+
+.textBox {
+  position:fixed;
+  bottom:0;
+  right:0;
+}
+
+h2 {
+  color:cyan;
+  text-decoration: underline;
+}
+
+input {
+  color:grey;
+  background-color:#f7f7f7;
+  margin:10px;
+  border:gray;
+}
+
+select {
+  background-color:#f7f7f7;
+  font-family:arial bold;
+  border:none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#red {
+  color:red
+}
+
+#chatMsg {
+  color:black;
+  background-color: #f7f7f7;
+  border-radius: 10%;
+  padding:1vh;
+  width:15vw;
+  text-align:left;
+}
+
+#msgTime {
+  background-color:white;
+  color:gray;
+}
+
+#ticketBtn {
+  border-radius: 99%;
+  height:7vh;
+  width:7vh;
+    margin:3vh;
+}
+
+#blkBtn {
+  border-radius: 99%;
+  height:7vh;
+  width:7vh;
+  margin:3vh;
+  color:white;
+  background-color:black;
+}
+
+.upperRight {
+  position:fixed;
+  top:0;
+  right:0;
+}
+
